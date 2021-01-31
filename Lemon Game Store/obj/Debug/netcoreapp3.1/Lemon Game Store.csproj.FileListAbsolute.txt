@@ -1,0 +1,13 @@
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.exe
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.deps.json
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.runtimeconfig.json
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.runtimeconfig.dev.json
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.dll
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.pdb
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.AssemblyInfoInputs.cache
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.AssemblyInfo.cs
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.csproj.CoreCompileInputs.cache
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.dll
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.pdb
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.genruntimeconfig.cache
+E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Lemon Store\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.csprojAssemblyReference.cache
