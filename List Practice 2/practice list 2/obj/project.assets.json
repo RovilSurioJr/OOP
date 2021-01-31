@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Practice of list of object\\List Practice 2\\practice list 2\\practice list 2.csproj",
+      "projectUniqueName": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\List Practice 2\\practice list 2\\practice list 2.csproj",
       "projectName": "practice list 2",
-      "projectPath": "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Practice of list of object\\List Practice 2\\practice list 2\\practice list 2.csproj",
+      "projectPath": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\List Practice 2\\practice list 2\\practice list 2.csproj",
       "packagesPath": "C:\\Users\\roviljr\\.nuget\\packages\\",
-      "outputPath": "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Practice of list of object\\List Practice 2\\practice list 2\\obj\\",
+      "outputPath": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\List Practice 2\\practice list 2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\roviljr\\AppData\\Roaming\\NuGet\\NuGet.Config",

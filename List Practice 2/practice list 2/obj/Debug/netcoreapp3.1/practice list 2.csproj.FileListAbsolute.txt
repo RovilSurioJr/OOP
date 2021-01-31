@@ -11,3 +11,16 @@ E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample progr
 E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Practice of list of object\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.pdb
 E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Practice of list of object\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.genruntimeconfig.cache
 E:\roviljr\OneDrive\Subjects Activities\OOP FINAL PROJ\Practice OOP\Sample program\Practice Creating Store\Practice of list of object\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.csprojAssemblyReference.cache
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\bin\Debug\netcoreapp3.1\practice list 2.exe
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\bin\Debug\netcoreapp3.1\practice list 2.deps.json
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\bin\Debug\netcoreapp3.1\practice list 2.runtimeconfig.json
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\bin\Debug\netcoreapp3.1\practice list 2.runtimeconfig.dev.json
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\bin\Debug\netcoreapp3.1\practice list 2.dll
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\bin\Debug\netcoreapp3.1\practice list 2.pdb
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.csprojAssemblyReference.cache
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.AssemblyInfoInputs.cache
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.AssemblyInfo.cs
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.csproj.CoreCompileInputs.cache
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.dll
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.pdb
+E:\roviljr\OneDrive\Documents\GitHub\OOP\List Practice 2\practice list 2\obj\Debug\netcoreapp3.1\practice list 2.genruntimeconfig.cache
