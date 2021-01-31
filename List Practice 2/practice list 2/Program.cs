@@ -29,7 +29,7 @@ namespace LemonStore
             switch (user_choice)
             {
                 case "1":
-                    Game.createGame();
+                    Game.createGamelist();
                     Game.sellGame();
                     break;
                 case "2":
@@ -53,12 +53,12 @@ namespace LemonStore
         class Game : Basedetails
         {
 
-            public static List<Game> theGames = new List<Game>(); // public static in order to become available globally
+            public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
 
-            public static void createGame()
+            public static void createGamelist()
             {
                 //List<Game> theGames = new List<Game>();
-                theGames.Add(new Game
+                Gamelist.Add(new Game
                 {
                     Title = "Persona 5",
                     Platform = "Console",
@@ -66,7 +66,7 @@ namespace LemonStore
                     Price = 1499
                 });
 
-                theGames.Add(new Game
+                Gamelist.Add(new Game
                 {
                     Title = "Uncharted",
                     Platform = "Console",
@@ -74,7 +74,7 @@ namespace LemonStore
                     Price = 500
                 });
 
-                theGames.Add(new Game
+                Gamelist.Add(new Game
                 {
                     Title = "Witcher 3",
                     Platform = "PC",
@@ -84,7 +84,7 @@ namespace LemonStore
             }
             public static void sellGame()
             {
-                foreach (var games in theGames)
+                foreach (var games in Gamelist)
                 {
                     Console.WriteLine($"Title: {games.Title}");
                     Console.WriteLine($"Platform: {games.Platform}");
@@ -98,7 +98,7 @@ namespace LemonStore
                 Console.WriteLine("What game to buy bro?");
                 var user_game_choice = Console.ReadLine();
                 bool searchFlag = false;
-                foreach (var gamess in theGames)
+                foreach (var gamess in Gamelist)
                 {
                     if (gamess.Title == user_game_choice)
                     {
@@ -185,11 +185,6 @@ namespace LemonStore
 
 
                 }
-
-
-
-
-            
 
         }
 
