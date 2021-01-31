@@ -14,11 +14,10 @@ namespace Lemon_Game_Store
         static void Menu()
         {
             Console.WriteLine("Welcome to Lemon Game Shop! Here are the items available: ");
-            Console.WriteLine("1. Brand New Games");
-            Console.WriteLine("2. 2nd hand games");
-            Console.WriteLine("3. Consoles");
-            Console.WriteLine("Pleaase choose what you want bro!!");
-
+            Console.WriteLine("1) BrandNew/2ndHand Games");
+            Console.WriteLine("2) Game Consoles");
+            Console.WriteLine("Choose what the customer wants to buy");
+            Console.Write("choice: ");
         }
 
         static void ShowAllItems()
@@ -28,11 +27,14 @@ namespace Lemon_Game_Store
             switch (user_choice)
             {
                 case "1":
-                    Game.createGame();
+                    Game.createGamelist();
                     Game.sellGame();
+                    break;
+                case "2":
+                    Gameconsole.createConsolelist();
+                    Gameconsole.sellGameconsole();
                     break;
             }
         }
-
     }
 }

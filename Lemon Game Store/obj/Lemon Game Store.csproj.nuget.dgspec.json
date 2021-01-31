@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Lemon Store\\Lemon Game Store\\Lemon Game Store.csproj": {}
+    "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj": {}
   },
   "projects": {
-    "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Lemon Store\\Lemon Game Store\\Lemon Game Store.csproj": {
+    "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Lemon Store\\Lemon Game Store\\Lemon Game Store.csproj",
+        "projectUniqueName": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj",
         "projectName": "Lemon Game Store",
-        "projectPath": "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Lemon Store\\Lemon Game Store\\Lemon Game Store.csproj",
+        "projectPath": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj",
         "packagesPath": "C:\\Users\\roviljr\\.nuget\\packages\\",
-        "outputPath": "E:\\roviljr\\OneDrive\\Subjects Activities\\OOP FINAL PROJ\\Practice OOP\\Sample program\\Practice Creating Store\\Lemon Store\\Lemon Game Store\\obj\\",
+        "outputPath": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roviljr\\AppData\\Roaming\\NuGet\\NuGet.Config",
