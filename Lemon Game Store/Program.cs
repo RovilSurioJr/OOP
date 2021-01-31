@@ -34,7 +34,14 @@ namespace Lemon_Game_Store
                     Gameconsole.createConsolelist();
                     Gameconsole.sellGameconsole();
                     break;
+                default:
+                    Console.WriteLine("Please select a number that is in the menu!");
+                    ShowAllItems();
+                    break;
             }
+            // To keep the console open while debugging
+            Console.WriteLine("Press any key to exit bro.");
+            Console.ReadKey();
         }
     }
 }
