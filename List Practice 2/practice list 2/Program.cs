@@ -14,12 +14,10 @@ namespace LemonStore
         static void Menu()
         {
             Console.WriteLine("Welcome to Lemon Game Shop! Here are the items available: ");
-            Console.WriteLine("1. BrandNew/2ndHand Games");
-            Console.WriteLine("2. Game Consoles");
-            Console.WriteLine("Please choose what you want bro!!");
-            Console.Write("Your Choice: ");
-
-
+            Console.WriteLine("1) BrandNew/2ndHand Games");
+            Console.WriteLine("2) Game Consoles");
+            Console.WriteLine("Choose what the customer wants to buy");
+            Console.Write("choice: ");
         }
 
         static void ShowAllItems()
@@ -52,9 +50,7 @@ namespace LemonStore
 
         class Game : Basedetails
         {
-
             public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
-
             public static void createGamelist()
             {
                 //List<Game> theGames = new List<Game>();
@@ -93,8 +89,6 @@ namespace LemonStore
 
                     Console.WriteLine("-----------------------------");
                 }
-
-
                 Console.WriteLine("What game to buy bro?");
                 var user_game_choice = Console.ReadLine();
                 bool searchFlag = false;
@@ -104,16 +98,12 @@ namespace LemonStore
                     {
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {gamess.Price}");
-
-
                         searchFlag = false;
                         break;
                     }
                     else
                     {
-
                         searchFlag = true;
-
                     }
                 }
                 if (searchFlag == true)
@@ -123,7 +113,6 @@ namespace LemonStore
         class Gameconsole : Basedetails
             {
                 public static List<Gameconsole> gameConsoleList = new List<Gameconsole>(); // public static in order to become available globally
-
                 public static void createConsolelist()
                 {
                     gameConsoleList.Add(new Gameconsole
@@ -157,8 +146,6 @@ namespace LemonStore
 
                         Console.WriteLine("-----------------------------");
                     }
-
-
                     Console.WriteLine("What game console to buy bro?");
                     var user_game_choice = Console.ReadLine();
                     bool searchFlag = false;
@@ -168,24 +155,17 @@ namespace LemonStore
                         {
                             Console.WriteLine("Search is successful");
                             Console.WriteLine($"The price is {game_cc.Price}");
-
-
                             searchFlag = false;
                             break;
                         }
                         else
                         {
-
                             searchFlag = true;
-
                         }
                     }
                     if (searchFlag == true)
                         Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
-
-
                 }
-
         }
 
     }
