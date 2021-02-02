@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Lemon_Game_Store
@@ -46,24 +47,36 @@ namespace Lemon_Game_Store
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game to buy bro?");
-            var user_game_choice = Console.ReadLine();
+            var user_answer = Console.ReadLine();
             bool searchFlag = false;
-            foreach (var gamess in Gamelist)
+            List<double> gamecart = new List<double>(); //double is used because thats the type of Price
+
+            while (user_answer != "done")
             {
-                if (gamess.Title == user_game_choice)
+                foreach (var gamess in Gamelist)
                 {
-                    Console.WriteLine("Search is successful");
-                    Console.WriteLine($"The price is {gamess.Price}");
-                    searchFlag = false;
-                    break;
+                    if (gamess.Title == user_answer)
+                    {
+                       
+                        Console.WriteLine("Search is successful");
+                        Console.WriteLine($"The price is {gamess.Price}");
+                        gamecart.Add(gamess.Price);
+                        Console.WriteLine("The game was added to cart, anything else? (gameName/done)");
+                        user_answer = Console.ReadLine();
+                        searchFlag = false;
+                        break;
+                    }
+                    else
+                    {
+                        searchFlag = true;
+                    }
                 }
-                else
-                {
-                    searchFlag = true;
-                }
+                if (searchFlag == true)
+                    Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
             }
-            if (searchFlag == true)
-                Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
+             var total_amt = gamecart.Sum();
+             Console.WriteLine($"The total amount to pay is {total_amt}");
+
         }
     }
 }
