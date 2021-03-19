@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Collections.Generic; //for the list
+using System.Linq; //for the sum
 using System.Text;
 
 namespace Lemon_Game_Store
@@ -57,7 +57,6 @@ namespace Lemon_Game_Store
                 {
                     if (gamess.Title == user_answer)
                     {
-                       
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {gamess.Price}");
                         gamecart.Add(gamess.Price);
@@ -76,7 +75,6 @@ namespace Lemon_Game_Store
             }
              var total_amt = gamecart.Sum();
              Console.WriteLine($"The total amount to pay is {total_amt}");
-
         }
     }
 }

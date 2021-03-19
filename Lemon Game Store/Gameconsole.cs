@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic; //for the list
+using System.Linq; //for the sum
 using System.Text;
 
 namespace Lemon_Game_Store
@@ -41,25 +42,37 @@ namespace Lemon_Game_Store
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game console to buy bro?");
-            var user_game_choice = Console.ReadLine();
+            var user_gconsole_choice = Console.ReadLine();
             bool searchFlag = false;
-            foreach (var game_cc in gameConsoleList)
+            List<double> gameconsolecart = new List<double>();
+
+            while (user_gconsole_choice != "done")
             {
-                if (game_cc.Title == user_game_choice)
+                foreach (var game_cc in gameConsoleList)
                 {
-                    Console.WriteLine("Search is successful");
-                    Console.WriteLine($"The price is {game_cc.Price}");
-                    searchFlag = false;
-                    break;
+                    if (game_cc.Title == user_gconsole_choice)
+                    {
+                        Console.WriteLine("Search is successful");
+                        Console.WriteLine($"The price is {game_cc.Price}");
+                        gameconsolecart.Add(game_cc.Price);
+                        Console.WriteLine("The game console was added to cart, anything else? (ConsoleName/done)");
+                        user_gconsole_choice = Console.ReadLine();
+                        searchFlag = false;
+                        break;
+                    }
+                    else
+                    {
+                        searchFlag = true;
+                    }
                 }
-                else
-                {
-                    searchFlag = true;
-                }
+                if (searchFlag == true)
+                    Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
+
             }
-            if (searchFlag == true)
-                Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
+            var total_amt = gameconsolecart.Sum();
+            Console.WriteLine($"The total amount to pay is {total_amt}");
         }
+
     }
 
 }
