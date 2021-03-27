@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq; //for the sum
 
 namespace LemonStore
 {
@@ -34,7 +35,14 @@ namespace LemonStore
                     Gameconsole.createConsolelist();
                     Gameconsole.sellGameconsole();
                     break;
+                default:
+                    Console.WriteLine("Please select a number that is in the menu!");
+                    ShowAllItems();
+                    break;
             }
+            // To keep the console open while debugging
+            Console.WriteLine("Press any key to exit bro.");
+            Console.ReadKey();
         }
 
         class Basedetails
@@ -90,24 +98,38 @@ namespace LemonStore
                     Console.WriteLine("-----------------------------");
                 }
                 Console.WriteLine("What game to buy bro?");
-                var user_game_choice = Console.ReadLine();
+                var user_answer = Console.ReadLine();
                 bool searchFlag = false;
-                foreach (var gamess in Gamelist)
+                List<double> gamecart = new List<double>(); //double is used because thats the type of Price
+
+                while (user_answer != "done")
                 {
-                    if (gamess.Title == user_game_choice)
+                    foreach (var gamess in Gamelist)
                     {
-                        Console.WriteLine("Search is successful");
-                        Console.WriteLine($"The price is {gamess.Price}");
-                        searchFlag = false;
+                        if (gamess.Title == user_answer)
+                        {
+                            Console.WriteLine("Search is successful");
+                            Console.WriteLine($"The price is {gamess.Price}");
+                            gamecart.Add(gamess.Price);
+                            Console.WriteLine("The game was added to cart, anything else? (gameName/done)");
+                            user_answer = Console.ReadLine();
+                            searchFlag = false;
+                            break;
+                        }
+                        else
+                        {
+                            searchFlag = true;
+                        }
+                    }
+                    if (searchFlag == true)
+                    {
+                        Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
                         break;
                     }
-                    else
-                    {
-                        searchFlag = true;
-                    }
+            
                 }
-                if (searchFlag == true)
-                    Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
+                var total_amt = gamecart.Sum();
+                Console.WriteLine($"The total amount to pay is {total_amt}");
             }
         }
         class Gameconsole : Basedetails
@@ -147,14 +169,21 @@ namespace LemonStore
                         Console.WriteLine("-----------------------------");
                     }
                     Console.WriteLine("What game console to buy bro?");
-                    var user_game_choice = Console.ReadLine();
-                    bool searchFlag = false;
+                var user_gconsole_choice = Console.ReadLine();
+                bool searchFlag = false;
+                List<double> gameconsolecart = new List<double>();
+
+                while (user_gconsole_choice != "done")
+                {
                     foreach (var game_cc in gameConsoleList)
                     {
-                        if (game_cc.Title == user_game_choice)
+                        if (game_cc.Title == user_gconsole_choice)
                         {
                             Console.WriteLine("Search is successful");
                             Console.WriteLine($"The price is {game_cc.Price}");
+                            gameconsolecart.Add(game_cc.Price);
+                            Console.WriteLine("The game console was added to cart, anything else? (ConsoleName/done)");
+                            user_gconsole_choice = Console.ReadLine();
                             searchFlag = false;
                             break;
                         }
@@ -164,8 +193,14 @@ namespace LemonStore
                         }
                     }
                     if (searchFlag == true)
+                    {
                         Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
+                        break;
+                    }
                 }
+                var total_amt = gameconsolecart.Sum();
+                Console.WriteLine($"The total amount to pay is {total_amt}");
+            }
         }
 
     }
