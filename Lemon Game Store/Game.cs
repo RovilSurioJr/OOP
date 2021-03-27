@@ -72,7 +72,8 @@ namespace Lemon_Game_Store
                 }
                 if (searchFlag == true)
                     Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
-                break;
+                    break;
+                //break;
             }
              var total_amt = gamecart.Sum();
              Console.WriteLine($"The total amount to pay is {total_amt}");
