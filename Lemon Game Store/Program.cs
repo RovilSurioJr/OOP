@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 
 namespace Lemon_Game_Store
+
+//At the outermost level of a program, types are organized into namespaces. The
+//using directive was used to make the System namespace available to our application,
+//to use the Console class.
+
+//We defined all our classes within Lemon_Game_Store namespace
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main(string[] args) // Void because it doesn't return any value to the caller
+                                               // signaling the default entry point of execution.
         {
             Menu();
             ShowAllItems();

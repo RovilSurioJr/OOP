@@ -13,7 +13,7 @@ namespace Lemon_Game_Store
             //List<Game> theGames = new List<Game>();
             Gamelist.Add(new Game
             {
-                Title = "Persona 5",
+                Title = "PERSONA 5",
                 Platform = "Console",
                 Condition = "Brandnew",
                 Price = 1499
@@ -21,7 +21,7 @@ namespace Lemon_Game_Store
 
             Gamelist.Add(new Game
             {
-                Title = "Uncharted",
+                Title = "UNCHARTED",
                 Platform = "Console",
                 Condition = "2nd Hand",
                 Price = 500
@@ -29,7 +29,7 @@ namespace Lemon_Game_Store
 
             Gamelist.Add(new Game
             {
-                Title = "Witcher 3",
+                Title = "WITCHER 3",
                 Platform = "PC",
                 Condition = "Brandnew",
                 Price = 1999
@@ -47,21 +47,23 @@ namespace Lemon_Game_Store
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game to buy bro?");
-            var user_answer = Console.ReadLine();
+            string upperAnswer = Console.ReadLine();
+            string user_Game_choice = upperAnswer.ToUpper();
             bool searchFlag = false;
             List<double> gamecart = new List<double>(); //double is used because thats the type of Price
 
-            while (user_answer != "done")
+            while (user_Game_choice != "DONE")
             {
                 foreach (var gamess in Gamelist)
                 {
-                    if (gamess.Title == user_answer)
+                    if (gamess.Title == user_Game_choice)
                     {
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {gamess.Price}");
                         gamecart.Add(gamess.Price);
-                        Console.WriteLine("The game was added to cart, anything else? (gameName/done)");
-                        user_answer = Console.ReadLine();
+                        Console.WriteLine("The game was added to cart, anything else? (GameName/Done)");
+                        string upper = Console.ReadLine();
+                        user_Game_choice = upper.ToUpper();
                         searchFlag = false;
                         break;
                     }
@@ -75,9 +77,8 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
                     break;
                 }
-                   
-                    //user_answer = "done";
-                //break;
+
+
             }
              var total_amt = gamecart.Sum();
              Console.WriteLine($"The total amount to pay is {total_amt}");

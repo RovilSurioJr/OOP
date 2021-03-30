@@ -26,7 +26,7 @@ namespace Lemon_Game_Store
 
             gameConsoleList.Add(new Gameconsole
             {
-                Title = "Nintendo Switch",
+                Title = "NINTENDO SWITCH",
                 Condition = "Brandnew",
                 Price = 14999
             });
@@ -42,21 +42,23 @@ namespace Lemon_Game_Store
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game console to buy bro?");
-            var user_gconsole_choice = Console.ReadLine();
+            string upperAnswer = Console.ReadLine();
+            string user_Gconsole_choice = upperAnswer.ToUpper();
             bool searchFlag = false;
             List<double> gameconsolecart = new List<double>();
 
-            while (user_gconsole_choice != "done")
+            while (user_Gconsole_choice != "DONE")
             {
                 foreach (var game_cc in gameConsoleList)
                 {
-                    if (game_cc.Title == user_gconsole_choice)
+                    if (game_cc.Title == user_Gconsole_choice)
                     {
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {game_cc.Price}");
                         gameconsolecart.Add(game_cc.Price);
                         Console.WriteLine("The game console was added to cart, anything else? (ConsoleName/done)");
-                        user_gconsole_choice = Console.ReadLine();
+                        string upper = Console.ReadLine();
+                        user_Gconsole_choice = upper.ToUpper();
                         searchFlag = false;
                         break;
                     }
