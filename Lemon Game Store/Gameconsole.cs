@@ -8,6 +8,7 @@ namespace Lemon_Game_Store
     class Gameconsole : Basedetails
     {
         public static List<Gameconsole> gameConsoleList = new List<Gameconsole>(); // public static in order to become available globally
+        public static List<double> gameconsolecart = new List<double>();
         public static void createConsolelist()
         {
             gameConsoleList.Add(new Gameconsole{title = "PS5",condition = "Brandnew",price = 27650});
@@ -27,7 +28,7 @@ namespace Lemon_Game_Store
             string upperAnswer = Console.ReadLine();
             string user_Gconsole_choice = upperAnswer.ToUpper();
             bool searchFlag = false;
-            List<double> gameconsolecart = new List<double>();
+            //public static List<double> gameconsolecart = new List<double>();
 
             while (user_Gconsole_choice != "0")
             {
@@ -57,6 +58,11 @@ namespace Lemon_Game_Store
                     user_Gconsole_choice = upper.ToUpper();
                 }
             }
+             Gameconsole c = new Gameconsole();
+             c.compute();
+        }
+        public override void compute()
+        {
             var total_amt = gameconsolecart.Sum();
             Console.WriteLine($"The total amount to pay is {total_amt}");
             Console.WriteLine("Input the amount you have: ");
