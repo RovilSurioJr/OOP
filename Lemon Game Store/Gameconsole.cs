@@ -75,7 +75,6 @@ namespace Lemon_Game_Store
             }
             var total_amt = gameconsolecart.Sum();
             Console.WriteLine($"The total amount to pay is {total_amt}");
-            Console.WriteLine($"The total amount to pay is {total_amt}");
             Console.WriteLine("Input the amount you have: ");
             int user_money = Convert.ToInt32(Console.ReadLine());
             var exchange = user_money - total_amt;
