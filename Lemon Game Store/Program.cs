@@ -24,7 +24,7 @@ namespace Lemon_Game_Store
             Console.WriteLine("1) BrandNew/2ndHand Games");
             Console.WriteLine("2) Game Consoles");
             Console.WriteLine("Choose what the customer wants to buy");
-            Console.Write("choice: ");
+            Console.WriteLine("choice: ");
         }
 
         static void ShowAllItems()

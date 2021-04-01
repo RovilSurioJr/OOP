@@ -133,6 +133,34 @@ namespace LemonStore
                 }
                 var total_amt = gamecart.Sum();
                 Console.WriteLine($"The total amount to pay is {total_amt}");
+                Console.WriteLine("Input the amount you have: ");
+                int user_money = Convert.ToInt32(Console.ReadLine());
+                var exchange = user_money - total_amt;
+                if (total_amt > user_money)
+                {
+                    Console.WriteLine("Not enough funds!");
+                    Console.WriteLine("Try again?(Y/N)");
+                    string upper = Console.ReadLine();
+                    string user_ans = upper.ToUpper();
+                    if (user_ans == "Y")
+                    {
+                        Console.WriteLine("Input the amount you have: ");
+                        int user_moneyy = Convert.ToInt32(Console.ReadLine());
+                        while (user_moneyy < total_amt)
+                        {
+                            Console.WriteLine("Not enough funds!");
+                            Console.WriteLine("Input the amount you have: ");
+                            user_moneyy = Convert.ToInt32(Console.ReadLine());
+                        }
+                        var exchangee = user_moneyy - total_amt;
+                        Console.WriteLine($"Thank you! Your exchange is {exchangee}");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine($"Thank you! Your exchange is {exchange}");
+                }
             }
         }
         class Gameconsole : Basedetails
@@ -205,6 +233,34 @@ namespace LemonStore
                 }
                 var total_amt = gameconsolecart.Sum();
                 Console.WriteLine($"The total amount to pay is {total_amt}");
+                Console.WriteLine("Input the amount you have: ");
+                int user_money = Convert.ToInt32(Console.ReadLine());
+                var exchange = user_money - total_amt ;
+                if(total_amt > user_money)
+                {
+                    Console.WriteLine("Not enough funds!");
+                    Console.WriteLine("Try again?(Y/N)");
+                    string upper = Console.ReadLine();
+                    string user_ans = upper.ToUpper();
+                    if (user_ans == "Y")
+                    {
+                        Console.WriteLine("Input the amount you have: ");
+                        int user_moneyy = Convert.ToInt32(Console.ReadLine());
+                        while (user_moneyy < total_amt)
+                        {
+                            Console.WriteLine("Not enough funds!");
+                            Console.WriteLine("Input the amount you have: ");
+                            user_moneyy = Convert.ToInt32(Console.ReadLine());
+                        }
+                        var exchangee = user_moneyy - total_amt;
+                        Console.WriteLine($"Thank you! Your exchange is {exchangee}");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine($"Thank you! Your exchange is {exchange}");
+                }
             }
         }
 
