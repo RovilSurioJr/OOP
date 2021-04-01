@@ -8,14 +8,15 @@ namespace Lemon_Game_Store
     class Game : Basedetails
     {
         public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
+        private string platform { get; set; }
         public static void createGamelist()
         {
             //List<Game> theGames = new List<Game>();
-            Gamelist.Add(new Game{title = "PERSONA 5",platform = "Console",condition = "Brandnew",price = 1499});
+            Gamelist.Add(new Game{title = "PERSONA 5",condition = "Brandnew",price = 1499, platform = "Console"});
 
-            Gamelist.Add(new Game{title = "UNCHARTED",platform = "Console",condition = "2nd Hand",price = 500});
+            Gamelist.Add(new Game{title = "UNCHARTED",condition = "2nd Hand",price = 500, platform = "Console" });
 
-            Gamelist.Add(new Game{title = "WITCHER 3",platform = "PC",condition = "Brandnew",price = 1999});
+            Gamelist.Add(new Game{title = "WITCHER 3",condition = "Brandnew",price = 1999, platform = "PC" });
         }
         public static void sellGame()
         {
