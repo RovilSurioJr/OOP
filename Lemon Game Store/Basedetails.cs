@@ -10,10 +10,10 @@ namespace Lemon_Game_Store
         //Basedetails is also an abstraction
         // For game details and console
         //  This is class is for inheritance, so that we will not create these get and set for every class
-        public string Title { get; set; }
-        public string Platform { get; set; }
-        public string Condition { get; set; }
-        public double Price { get; set; }
+        public string title { get; set; }
+        public string platform { get; set; }
+        public string condition { get; set; }
+        public double price { get; set; }
 
     }
 }

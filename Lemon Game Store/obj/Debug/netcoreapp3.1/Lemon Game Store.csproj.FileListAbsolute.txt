@@ -24,3 +24,16 @@ E:\roviljr\OneDrive\Documents\GitHub\OOP\Lemon Game Store\bin\Debug\netcoreapp3.
 E:\roviljr\OneDrive\Documents\GitHub\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.dll
 E:\roviljr\OneDrive\Documents\GitHub\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.pdb
 E:\roviljr\OneDrive\Documents\GitHub\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.genruntimeconfig.cache
+D:\PROGRAMS\Github\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.exe
+D:\PROGRAMS\Github\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.deps.json
+D:\PROGRAMS\Github\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.runtimeconfig.json
+D:\PROGRAMS\Github\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.runtimeconfig.dev.json
+D:\PROGRAMS\Github\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.dll
+D:\PROGRAMS\Github\OOP\Lemon Game Store\bin\Debug\netcoreapp3.1\Lemon Game Store.pdb
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.csprojAssemblyReference.cache
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.AssemblyInfoInputs.cache
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.AssemblyInfo.cs
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.csproj.CoreCompileInputs.cache
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.dll
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.pdb
+D:\PROGRAMS\Github\OOP\Lemon Game Store\obj\Debug\netcoreapp3.1\Lemon Game Store.genruntimeconfig.cache

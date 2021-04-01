@@ -12,32 +12,32 @@ namespace Lemon_Game_Store
         {
             gameConsoleList.Add(new Gameconsole
             {
-                Title = "PS5",
-                Condition = "Brandnew",
-                Price = 27650
+                title = "PS5",
+                condition = "Brandnew",
+                price = 27650
             });
 
             gameConsoleList.Add(new Gameconsole
             {
-                Title = "PS4",
-                Condition = "2nd Hand",
-                Price = 8000
+                title = "PS4",
+                condition = "2nd Hand",
+                price = 8000
             });
 
             gameConsoleList.Add(new Gameconsole
             {
-                Title = "NINTENDO SWITCH",
-                Condition = "Brandnew",
-                Price = 14999
+                title = "NINTENDO SWITCH",
+                condition = "Brandnew",
+                price = 14999
             });
         }
         public static void sellGameconsole()
         {
             foreach (var game_c in gameConsoleList)
             {
-                Console.WriteLine($"Title: {game_c.Title}");
-                Console.WriteLine($"Item Condition: {game_c.Condition}");
-                Console.WriteLine($"Price: {game_c.Price}");
+                Console.WriteLine($"Title: {game_c.title}");
+                Console.WriteLine($"Item Condition: {game_c.condition}");
+                Console.WriteLine($"Price: {game_c.price}");
 
                 Console.WriteLine("-----------------------------");
             }
@@ -51,11 +51,11 @@ namespace Lemon_Game_Store
             {
                 foreach (var game_cc in gameConsoleList)
                 {
-                    if (game_cc.Title == user_Gconsole_choice)
+                    if (game_cc.title == user_Gconsole_choice)
                     {
                         Console.WriteLine("Search is successful");
-                        Console.WriteLine($"The price is {game_cc.Price}");
-                        gameconsolecart.Add(game_cc.Price);
+                        Console.WriteLine($"The price is {game_cc.price}");
+                        gameconsolecart.Add(game_cc.price);
                         Console.WriteLine("The game console was added to cart, anything else? (ConsoleName/done)");
                         string upper = Console.ReadLine();
                         user_Gconsole_choice = upper.ToUpper();

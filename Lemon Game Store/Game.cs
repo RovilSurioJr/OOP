@@ -13,36 +13,36 @@ namespace Lemon_Game_Store
             //List<Game> theGames = new List<Game>();
             Gamelist.Add(new Game
             {
-                Title = "PERSONA 5",
-                Platform = "Console",
-                Condition = "Brandnew",
-                Price = 1499
+                title = "PERSONA 5",
+                platform = "Console",
+                condition = "Brandnew",
+                price = 1499
             });
 
             Gamelist.Add(new Game
             {
-                Title = "UNCHARTED",
-                Platform = "Console",
-                Condition = "2nd Hand",
-                Price = 500
+                title = "UNCHARTED",
+                platform = "Console",
+                condition = "2nd Hand",
+                price = 500
             });
 
             Gamelist.Add(new Game
             {
-                Title = "WITCHER 3",
-                Platform = "PC",
-                Condition = "Brandnew",
-                Price = 1999
+                title = "WITCHER 3",
+                platform = "PC",
+                condition = "Brandnew",
+                price = 1999
             });
         }
         public static void sellGame()
         {
             foreach (var games in Gamelist)
             {
-                Console.WriteLine($"Title: {games.Title}");
-                Console.WriteLine($"Platform: {games.Platform}");
-                Console.WriteLine($"Item Condition: {games.Condition}");
-                Console.WriteLine($"Price: {games.Price}");
+                Console.WriteLine($"Title: {games.title}");
+                Console.WriteLine($"Platform: {games.platform}");
+                Console.WriteLine($"Item Condition: {games.condition}");
+                Console.WriteLine($"Price: {games.price}");
 
                 Console.WriteLine("-----------------------------");
             }
@@ -56,11 +56,11 @@ namespace Lemon_Game_Store
             {
                 foreach (var gamess in Gamelist)
                 {
-                    if (gamess.Title == user_Game_choice)
+                    if (gamess.title == user_Game_choice)
                     {
                         Console.WriteLine("Search is successful");
-                        Console.WriteLine($"The price is {gamess.Price}");
-                        gamecart.Add(gamess.Price);
+                        Console.WriteLine($"The price is {gamess.price}");
+                        gamecart.Add(gamess.price);
                         Console.WriteLine("The game was added to cart, anything else? (GameName/Done)");
                         string upper = Console.ReadLine();
                         user_Game_choice = upper.ToUpper();
