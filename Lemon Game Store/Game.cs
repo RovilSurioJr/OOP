@@ -85,7 +85,6 @@ namespace Lemon_Game_Store
                     var exchangee = user_moneyy - total_amt;
                     Console.WriteLine($"Thank you! Your exchange is {exchangee}");
                 }
-
             }
             else
             {

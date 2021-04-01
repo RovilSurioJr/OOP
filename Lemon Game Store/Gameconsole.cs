@@ -28,7 +28,6 @@ namespace Lemon_Game_Store
             string upperAnswer = Console.ReadLine();
             string user_Gconsole_choice = upperAnswer.ToUpper();
             bool searchFlag = false;
-            //public static List<double> gameconsolecart = new List<double>();
 
             while (user_Gconsole_choice != "0")
             {
@@ -82,7 +81,6 @@ namespace Lemon_Game_Store
                     var exchangee = user_moneyy - total_amt;
                     Console.WriteLine($"Thank you! Your exchange is {exchangee}");
                 }
-
             }
             else
             {
