@@ -10,26 +10,9 @@ namespace Lemon_Game_Store
         public static List<Gameconsole> gameConsoleList = new List<Gameconsole>(); // public static in order to become available globally
         public static void createConsolelist()
         {
-            gameConsoleList.Add(new Gameconsole
-            {
-                title = "PS5",
-                condition = "Brandnew",
-                price = 27650
-            });
-
-            gameConsoleList.Add(new Gameconsole
-            {
-                title = "PS4",
-                condition = "2nd Hand",
-                price = 8000
-            });
-
-            gameConsoleList.Add(new Gameconsole
-            {
-                title = "NINTENDO SWITCH",
-                condition = "Brandnew",
-                price = 14999
-            });
+            gameConsoleList.Add(new Gameconsole{title = "PS5",condition = "Brandnew",price = 27650});
+            gameConsoleList.Add(new Gameconsole{title = "PS4",condition = "2nd Hand",price = 8000});
+            gameConsoleList.Add(new Gameconsole{title = "NINTENDO SWITCH",condition = "Brandnew",price = 14999});
         }
         public static void sellGameconsole()
         {
@@ -38,7 +21,6 @@ namespace Lemon_Game_Store
                 Console.WriteLine($"Title: {game_c.title}");
                 Console.WriteLine($"Item Condition: {game_c.condition}");
                 Console.WriteLine($"Price: {game_c.price}");
-
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game console to buy?");
@@ -56,7 +38,7 @@ namespace Lemon_Game_Store
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {game_cc.price}");
                         gameconsolecart.Add(game_cc.price);
-                        Console.WriteLine("The game console was added to cart, anything else? (Enter 0 to exit)");
+                        Console.WriteLine("The game console was added to cart, anything else? (Enter 0 to proceed to payment)");
                         string upper = Console.ReadLine();
                         user_Gconsole_choice = upper.ToUpper();
                         searchFlag = false;
@@ -73,8 +55,6 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Search another game (Enter 0 to exit)");
                     string upper = Console.ReadLine();
                     user_Gconsole_choice = upper.ToUpper();
-
-                    //break;
                 }
             }
             var total_amt = gameconsolecart.Sum();

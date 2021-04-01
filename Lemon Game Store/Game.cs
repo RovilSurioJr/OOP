@@ -11,29 +11,11 @@ namespace Lemon_Game_Store
         public static void createGamelist()
         {
             //List<Game> theGames = new List<Game>();
-            Gamelist.Add(new Game
-            {
-                title = "PERSONA 5",
-                platform = "Console",
-                condition = "Brandnew",
-                price = 1499
-            });
+            Gamelist.Add(new Game{title = "PERSONA 5",platform = "Console",condition = "Brandnew",price = 1499});
 
-            Gamelist.Add(new Game
-            {
-                title = "UNCHARTED",
-                platform = "Console",
-                condition = "2nd Hand",
-                price = 500
-            });
+            Gamelist.Add(new Game{title = "UNCHARTED",platform = "Console",condition = "2nd Hand",price = 500});
 
-            Gamelist.Add(new Game
-            {
-                title = "WITCHER 3",
-                platform = "PC",
-                condition = "Brandnew",
-                price = 1999
-            });
+            Gamelist.Add(new Game{title = "WITCHER 3",platform = "PC",condition = "Brandnew",price = 1999});
         }
         public static void sellGame()
         {
@@ -43,7 +25,6 @@ namespace Lemon_Game_Store
                 Console.WriteLine($"Platform: {games.platform}");
                 Console.WriteLine($"Item Condition: {games.condition}");
                 Console.WriteLine($"Price: {games.price}");
-
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game to buy?");
@@ -61,7 +42,7 @@ namespace Lemon_Game_Store
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {gamess.price}");
                         gamecart.Add(gamess.price);
-                        Console.WriteLine("The game was added to cart, anything else? (Enter 0 to exit)");
+                        Console.WriteLine("The game was added to cart, anything else? (Enter 0 to proceed to payment)");
                         string upper = Console.ReadLine();
                         user_Game_choice = upper.ToUpper();
                         searchFlag = false;
