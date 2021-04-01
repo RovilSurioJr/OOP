@@ -8,7 +8,7 @@ namespace Lemon_Game_Store
     class Game : Basedetails
     {
         public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
-        private string platform { get; set; }
+        private string platform { get; set; }   // removed from Basedetail.cs cheanged it to private
         public static void createGamelist()
         {
             //List<Game> theGames = new List<Game>();
