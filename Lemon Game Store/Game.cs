@@ -9,7 +9,7 @@ namespace Lemon_Game_Store
     {
         public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
         public static List<double> gamecart = new List<double>(); //double is used because thats the type of Price
-        private string platform { get; set; }   // removed from Basedetail.cs cheanged it to private
+        private string platform { get;  set; }   // removed from Basedetail.cs cheanged it to private
         public static void createGamelist()
         {
             //List<Game> theGames = new List<Game>();

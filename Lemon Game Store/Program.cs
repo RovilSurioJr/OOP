@@ -38,9 +38,10 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Input Game Title");
                     Console.WriteLine("Input Condition");
                     Console.WriteLine("Input Price");
+                    string upper = Console.ReadLine();
                     Game.Gamelist.Add(new Game
                     {
-                        title = Console.ReadLine(),
+                        title = upper.ToUpper(),
                         condition = Console.ReadLine(),
                         price = Convert.ToInt32(Console.ReadLine())
                     });
@@ -51,9 +52,10 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Input Console Name");
                     Console.WriteLine("Input Condition");
                     Console.WriteLine("Input Price");
+                    string bupper = Console.ReadLine();
                     Gameconsole.gameConsoleList.Add(new Gameconsole
                     {
-                        title = Console.ReadLine(),
+                        title = bupper.ToUpper(),
                         condition = Console.ReadLine(),
                         price = Convert.ToInt32(Console.ReadLine())
                     });
