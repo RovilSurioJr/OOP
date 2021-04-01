@@ -76,11 +76,13 @@ namespace Lemon_Game_Store
             switch (user_choice)
             {
                 case "1":
-                    Game.createGamelist();
+                    Game cl = new Game();
+                    cl.createlist();
                     Game.sellGame();
                     break;
                 case "2":
-                    Gameconsole.createConsolelist();
+                    Gameconsole gc = new Gameconsole();
+                    gc.createlist();
                     Gameconsole.sellGameconsole();
                     break;
                 case "3":

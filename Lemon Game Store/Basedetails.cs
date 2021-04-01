@@ -12,7 +12,7 @@ namespace Lemon_Game_Store
         public string title { get; set; }
         public string condition { get; set; }
         public double price { get; set; }
-        public virtual void compute() { }
- 
+        public virtual void createlist() { }
+
     }
 }

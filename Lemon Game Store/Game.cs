@@ -10,9 +10,8 @@ namespace Lemon_Game_Store
         public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
         public static List<double> gamecart = new List<double>(); //double is used because thats the type of Price
         private string platform { get;  set; }   // removed from Basedetail.cs cheanged it to private
-        public static void createGamelist()
+        public override void createlist()
         {
-            //List<Game> theGames = new List<Game>();
             Gamelist.Add(new Game { title = "PERSONA 5", condition = "Brandnew", price = 1499, platform = "Console" });
 
             Gamelist.Add(new Game { title = "UNCHARTED", condition = "2nd Hand", price = 500, platform = "Console" });
@@ -62,11 +61,6 @@ namespace Lemon_Game_Store
                     user_Game_choice = upper.ToUpper();
                 }
             }
-            Game c = new Game();
-            c.compute();
-        }
-        public override void compute()
-        {
             var total_amt = gamecart.Sum();
             Console.WriteLine($"The total amount to pay is {total_amt}");
             Console.WriteLine("Input the amount you have: ");
@@ -98,5 +92,6 @@ namespace Lemon_Game_Store
                 Console.WriteLine($"Thank you! Your exchange is {exchange}");
             }
         }
+ 
     }
 }

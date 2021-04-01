@@ -9,7 +9,7 @@ namespace Lemon_Game_Store
     {
         public static List<Gameconsole> gameConsoleList = new List<Gameconsole>(); // public static in order to become available globally
         public static List<double> gameconsolecart = new List<double>();
-        public static void createConsolelist()
+        public override void createlist()
         {
             gameConsoleList.Add(new Gameconsole{title = "PS5",condition = "Brandnew",price = 27650});
             gameConsoleList.Add(new Gameconsole{title = "PS4",condition = "2nd Hand",price = 8000});
@@ -53,16 +53,11 @@ namespace Lemon_Game_Store
                 if (searchFlag == true)
                 {
                     Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
-                    Console.WriteLine("Search another game (Enter 0 to exit)");
+                    Console.WriteLine("Search another game console (Enter 0 to exit)");
                     string upper = Console.ReadLine();
                     user_Gconsole_choice = upper.ToUpper();
                 }
             }
-             Gameconsole c = new Gameconsole();
-             c.compute();
-        }
-        public override void compute()
-        {
             var total_amt = gameconsolecart.Sum();
             Console.WriteLine($"The total amount to pay is {total_amt}");
             Console.WriteLine("Input the amount you have: ");

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROGRAMS\\Github\\OOP\\Lemon Game Store\\Lemon Game Store.csproj": {}
+    "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj": {}
   },
   "projects": {
-    "D:\\PROGRAMS\\Github\\OOP\\Lemon Game Store\\Lemon Game Store.csproj": {
+    "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROGRAMS\\Github\\OOP\\Lemon Game Store\\Lemon Game Store.csproj",
+        "projectUniqueName": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj",
         "projectName": "Lemon Game Store",
-        "projectPath": "D:\\PROGRAMS\\Github\\OOP\\Lemon Game Store\\Lemon Game Store.csproj",
-        "packagesPath": "C:\\Users\\LEMONBROOK\\.nuget\\packages\\",
-        "outputPath": "D:\\PROGRAMS\\Github\\OOP\\Lemon Game Store\\obj\\",
+        "projectPath": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\Lemon Game Store.csproj",
+        "packagesPath": "C:\\Users\\roviljr\\.nuget\\packages\\",
+        "outputPath": "E:\\roviljr\\OneDrive\\Documents\\GitHub\\OOP\\Lemon Game Store\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LEMONBROOK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roviljr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
