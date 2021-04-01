@@ -5,11 +5,10 @@ using System.Text;
 namespace Lemon_Game_Store
 {
     
-    class Basedetails
+    abstract class Basedetails // (Abstraction) -  This a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
     {
-        //Basedetails is also an abstraction
-        // For game details and console
-        //  This is class is for inheritance, so that we will not create these get and set for every class
+        // For game details and console details
+        // No need to create these get and set for every class
         public string title { get; set; }
         public string condition { get; set; }
         public double price { get; set; }
