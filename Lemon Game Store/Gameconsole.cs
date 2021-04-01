@@ -41,13 +41,13 @@ namespace Lemon_Game_Store
 
                 Console.WriteLine("-----------------------------");
             }
-            Console.WriteLine("What game console to buy bro?");
+            Console.WriteLine("What game console to buy?");
             string upperAnswer = Console.ReadLine();
             string user_Gconsole_choice = upperAnswer.ToUpper();
             bool searchFlag = false;
             List<double> gameconsolecart = new List<double>();
 
-            while (user_Gconsole_choice != "DONE")
+            while (user_Gconsole_choice != "0")
             {
                 foreach (var game_cc in gameConsoleList)
                 {
@@ -56,7 +56,7 @@ namespace Lemon_Game_Store
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {game_cc.price}");
                         gameconsolecart.Add(game_cc.price);
-                        Console.WriteLine("The game console was added to cart, anything else? (ConsoleName/done)");
+                        Console.WriteLine("The game console was added to cart, anything else? (Enter 0 to exit)");
                         string upper = Console.ReadLine();
                         user_Gconsole_choice = upper.ToUpper();
                         searchFlag = false;
@@ -70,7 +70,11 @@ namespace Lemon_Game_Store
                 if (searchFlag == true)
                 {
                     Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
-                    break;
+                    Console.WriteLine("Search another game (Enter 0 to exit)");
+                    string upper = Console.ReadLine();
+                    user_Gconsole_choice = upper.ToUpper();
+
+                    //break;
                 }
             }
             var total_amt = gameconsolecart.Sum();

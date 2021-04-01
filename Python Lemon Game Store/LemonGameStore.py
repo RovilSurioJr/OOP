@@ -39,7 +39,7 @@ class Game:
                     self.gamecart.append(gamess.Price)
                     user_input = input("The game was added to cart, anything else? (gameName/done)")
                     searchFlag = False
-                    break;
+                    #break;
                 else:
                     searchFlag = True
             if searchFlag == True:
@@ -86,6 +86,13 @@ class Gameconsole:
         total_amount_to_pay = sum(self.gamecon_cart)
         print("The total amount to pay is: {}".format(total_amount_to_pay))
 
+class Transaction:
+    def trans(self):
+        for loop in range(len(Gameconsole.gamecon_cart)):
+            print(Gameconsole.gamecon_cart[len])
+
+
+
 class Menu:
     def __init__(self):
        print("Welcome to Lemon Game Shop! Here are the items available:")
@@ -98,6 +105,7 @@ class Menu:
 if __name__ == '__main__':
     games = Game()
     gameconsole = Gameconsole()
+    transaction = Transaction()
     user_choice = "1"
     while user_choice == "1":
        menu = Menu()
@@ -108,6 +116,7 @@ if __name__ == '__main__':
        elif user_choice == "2":
            gameconsole.create_gamecon_list()
            gameconsole.sellgame_c()
+           transaction.trans()
 
        user_choice = input("Press 1 to Continue, Press 2 to Exit ")     
     

@@ -46,13 +46,13 @@ namespace Lemon_Game_Store
 
                 Console.WriteLine("-----------------------------");
             }
-            Console.WriteLine("What game to buy bro?");
+            Console.WriteLine("What game to buy?");
             string upperAnswer = Console.ReadLine();
             string user_Game_choice = upperAnswer.ToUpper();
             bool searchFlag = false;
             List<double> gamecart = new List<double>(); //double is used because thats the type of Price
 
-            while (user_Game_choice != "DONE")
+            while (user_Game_choice != "0")
             {
                 foreach (var gamess in Gamelist)
                 {
@@ -61,7 +61,7 @@ namespace Lemon_Game_Store
                         Console.WriteLine("Search is successful");
                         Console.WriteLine($"The price is {gamess.price}");
                         gamecart.Add(gamess.price);
-                        Console.WriteLine("The game was added to cart, anything else? (GameName/Done)");
+                        Console.WriteLine("The game was added to cart, anything else? (Enter 0 to exit)");
                         string upper = Console.ReadLine();
                         user_Game_choice = upper.ToUpper();
                         searchFlag = false;
@@ -74,8 +74,10 @@ namespace Lemon_Game_Store
                 }
                 if (searchFlag == true)
                 {
-                    Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
-                    break;
+                    Console.WriteLine("Search is unsuccessful, it seems like we don't have that");
+                    Console.WriteLine("Search another game (Enter 0 to exit)");
+                    string upper = Console.ReadLine();
+                    user_Game_choice = upper.ToUpper();
                 }
 
 
