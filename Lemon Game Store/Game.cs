@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic; //for the list
 using System.Linq; //for the sum
-using System.Text;
 
 namespace Lemon_Game_Store
 {
