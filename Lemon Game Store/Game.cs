@@ -5,46 +5,46 @@ using System.Text;
 
 namespace Lemon_Game_Store
 {
-    class Game : Basedetails
+    class Game : BaseDetails
     {
-        public static List<Game> Gamelist = new List<Game>(); // public static in order to become available globally
-        public static List<double> gamecart = new List<double>(); //double is used because thats the type of Price
-        private string platform { get; set; } = "PC";  // removed from Basedetail.cs cheanged it to private
-        public override void createlist()
+        public static List<Game> gameList = new List<Game>(); // public static in order to become available globally
+        public static List<double> gameCart = new List<double>(); //double is used because thats the type of Price
+        private string _platform { get; set; } = "PC";  // removed from Basedetail.cs cheanged it to private
+        public override void CreateList()
         {
-            Gamelist.Add(new Game { title = "PERSONA 5", condition = "Brandnew", price = 1499, platform = "Console" });
+            gameList.Add(new Game { Title = "PERSONA 5", Condition = "Brandnew", Price = 1499, _platform = "Console" });
 
-            Gamelist.Add(new Game { title = "UNCHARTED", condition = "2nd Hand", price = 500, platform = "Console" });
+            gameList.Add(new Game { Title = "UNCHARTED", Condition = "2nd Hand", Price = 500, _platform = "Console" });
 
-            Gamelist.Add(new Game { title = "WITCHER 3", condition = "Brandnew", price = 1999, platform = "PC" });
+            gameList.Add(new Game { Title = "WITCHER 3", Condition = "Brandnew", Price = 1999, _platform = "PC" });
         }
-        public static void sellGame()
+        public static void SellGame()
         {
-            foreach (var games in Gamelist)
+            foreach (var games in gameList)
             {
-                Console.WriteLine($"Title: {games.title}");
-                Console.WriteLine($"Platform: {games.platform}");
-                Console.WriteLine($"Item Condition: {games.condition}");
-                Console.WriteLine($"Price: {games.price}");
+                Console.WriteLine($"Title: {games.Title}");
+                Console.WriteLine($"Platform: {games._platform}");
+                Console.WriteLine($"Item Condition: {games.Condition}");
+                Console.WriteLine($"Price: {games.Price}");
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game to buy?");
             string upperAnswer = Console.ReadLine();
-            string user_Game_choice = upperAnswer.ToUpper();
+            string userGameChoice = upperAnswer.ToUpper();
             bool searchFlag = false;
 
-            while (user_Game_choice != "0")
+            while (userGameChoice != "0")
             {
-                foreach (var gamess in Gamelist)
+                foreach (var games_ in gameList)
                 {
-                    if (gamess.title == user_Game_choice)
+                    if (games_.Title == userGameChoice)
                     {
                         Console.WriteLine("Search is successful");
-                        Console.WriteLine($"The price is {gamess.price}");
-                        gamecart.Add(gamess.price);
+                        Console.WriteLine($"The price is {games_.Price}");
+                        gameCart.Add(games_.Price);
                         Console.WriteLine("The game was added to cart, anything else? (Enter 0 to proceed to payment)");
                         string upper = Console.ReadLine();
-                        user_Game_choice = upper.ToUpper();
+                        userGameChoice = upper.ToUpper();
                         searchFlag = false;
                         break;
                     }
@@ -58,32 +58,32 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Search is unsuccessful, it seems like we don't have that");
                     Console.WriteLine("Search another game (Enter 0 to exit)");
                     string upper = Console.ReadLine();
-                    user_Game_choice = upper.ToUpper();
+                    userGameChoice = upper.ToUpper();
                 }
             }
-            var total_amt = gamecart.Sum();
-            Console.WriteLine($"The total amount to pay is {total_amt}");
+            var totalAmount = gameCart.Sum();
+            Console.WriteLine($"The total amount to pay is {totalAmount}");
             Console.WriteLine("Input the amount you have: ");
-            int user_money = Convert.ToInt32(Console.ReadLine());
-            var exchange = user_money - total_amt;
-            if (total_amt > user_money)
+            int userMoney = Convert.ToInt32(Console.ReadLine());
+            var exchange = userMoney - totalAmount;
+            if (totalAmount > userMoney)
             {
                 Console.WriteLine("Not enough funds!");
                 Console.WriteLine("Try again?(Y/N)");
                 string upper = Console.ReadLine();
-                string user_ans = upper.ToUpper();
-                if (user_ans == "Y")
+                string userAns = upper.ToUpper();
+                if (userAns == "Y")
                 {
                     Console.WriteLine("Input the amount you have: ");
-                    int user_moneyy = Convert.ToInt32(Console.ReadLine());
-                    while (user_moneyy < total_amt)
+                    int userMoney_ = Convert.ToInt32(Console.ReadLine());
+                    while (userMoney_ < totalAmount)
                     {
                         Console.WriteLine("Not enough funds!");
                         Console.WriteLine("Input the amount you have: ");
-                        user_moneyy = Convert.ToInt32(Console.ReadLine());
+                        userMoney_ = Convert.ToInt32(Console.ReadLine());
                     }
-                    var exchangee = user_moneyy - total_amt;
-                    Console.WriteLine($"Thank you! Your exchange is {exchangee}");
+                    var exchange_ = userMoney_ - totalAmount;
+                    Console.WriteLine($"Thank you! Your exchange is {exchange_}");
                 }
             }
             else

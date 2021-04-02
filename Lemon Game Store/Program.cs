@@ -38,11 +38,11 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Input Condition");
                     Console.WriteLine("Input Price");
                     string upper = Console.ReadLine();
-                    Game.Gamelist.Add(new Game
+                    Game.gameList.Add(new Game
                     {
-                        title = upper.ToUpper(),
-                        condition = Console.ReadLine(),
-                        price = Convert.ToInt32(Console.ReadLine())
+                        Title = upper.ToUpper(),
+                        Condition = Console.ReadLine(),
+                        Price = Convert.ToInt32(Console.ReadLine())
                     });
                     Menu();
                     ShowAllItems();
@@ -52,11 +52,11 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Input Condition");
                     Console.WriteLine("Input Price");
                     string bupper = Console.ReadLine();
-                    Gameconsole.gameConsoleList.Add(new Gameconsole
+                    GameConsole.gameConsoleList.Add(new GameConsole
                     {
-                        title = bupper.ToUpper(),
-                        condition = Console.ReadLine(),
-                        price = Convert.ToInt32(Console.ReadLine())
+                        Title = bupper.ToUpper(),
+                        Condition = Console.ReadLine(),
+                        Price = Convert.ToInt32(Console.ReadLine())
                     });
                     Menu();
                     ShowAllItems();
@@ -76,13 +76,13 @@ namespace Lemon_Game_Store
             {
                 case "1":
                     Game cl = new Game();
-                    cl.createlist();
-                    Game.sellGame();
+                    cl.CreateList();
+                    Game.SellGame();
                     break;
                 case "2":
-                    Gameconsole gc = new Gameconsole();
-                    gc.createlist();
-                    Gameconsole.sellGameconsole();
+                    GameConsole gc = new GameConsole();
+                    gc.CreateList();
+                    GameConsole.SellGameConsole();
                     break;
                 case "3":
                     Console.WriteLine("Choose to Buy:");
@@ -96,7 +96,7 @@ namespace Lemon_Game_Store
                     break;
             }
             // To keep the console open while debugging
-            Console.WriteLine("Press any key to exit bro.");
+            Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
     }

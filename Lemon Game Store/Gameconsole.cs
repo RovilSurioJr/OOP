@@ -5,42 +5,42 @@ using System.Text;
 
 namespace Lemon_Game_Store
 {
-    class Gameconsole : Basedetails
+    class GameConsole : BaseDetails
     {
-        public static List<Gameconsole> gameConsoleList = new List<Gameconsole>(); // public static in order to become available globally
-        public static List<double> gameconsolecart = new List<double>();
-        public override void createlist()
+        public static List<GameConsole> gameConsoleList = new List<GameConsole>(); // public static in order to become available globally
+        public static List<double> gameConsoleCart = new List<double>();
+        public override void CreateList()
         {
-            gameConsoleList.Add(new Gameconsole{title = "PS5",condition = "Brandnew",price = 27650});
-            gameConsoleList.Add(new Gameconsole{title = "PS4",condition = "2nd Hand",price = 8000});
-            gameConsoleList.Add(new Gameconsole{title = "NINTENDO SWITCH",condition = "Brandnew",price = 14999});
+            gameConsoleList.Add(new GameConsole{Title = "PS5",Condition = "Brandnew",Price = 27650});
+            gameConsoleList.Add(new GameConsole{Title = "PS4",Condition = "2nd Hand",Price = 8000});
+            gameConsoleList.Add(new GameConsole{Title = "NINTENDO SWITCH",Condition = "Brandnew",Price = 14999});
         }
-        public static void sellGameconsole()
+        public static void SellGameConsole()
         {
-            foreach (var game_c in gameConsoleList)
+            foreach (var gameConsole in gameConsoleList)
             {
-                Console.WriteLine($"Title: {game_c.title}");
-                Console.WriteLine($"Item Condition: {game_c.condition}");
-                Console.WriteLine($"Price: {game_c.price}");
+                Console.WriteLine($"Title: {gameConsole.Title}");
+                Console.WriteLine($"Item Condition: {gameConsole.Condition}");
+                Console.WriteLine($"Price: {gameConsole.Price}");
                 Console.WriteLine("-----------------------------");
             }
             Console.WriteLine("What game console to buy?");
             string upperAnswer = Console.ReadLine();
-            string user_Gconsole_choice = upperAnswer.ToUpper();
+            string userGaconsoleChoice = upperAnswer.ToUpper();
             bool searchFlag = false;
 
-            while (user_Gconsole_choice != "0")
+            while (userGaconsoleChoice != "0")
             {
-                foreach (var game_cc in gameConsoleList)
+                foreach (var game_Console in gameConsoleList)
                 {
-                    if (game_cc.title == user_Gconsole_choice)
+                    if (game_Console.Title == userGaconsoleChoice)
                     {
                         Console.WriteLine("Search is successful");
-                        Console.WriteLine($"The price is {game_cc.price}");
-                        gameconsolecart.Add(game_cc.price);
+                        Console.WriteLine($"The price is {game_Console.Price}");
+                        gameConsoleCart.Add(game_Console.Price);
                         Console.WriteLine("The game console was added to cart, anything else? (Enter 0 to proceed to payment)");
                         string upper = Console.ReadLine();
-                        user_Gconsole_choice = upper.ToUpper();
+                        userGaconsoleChoice = upper.ToUpper();
                         searchFlag = false;
                         break;
                     }
@@ -54,32 +54,32 @@ namespace Lemon_Game_Store
                     Console.WriteLine("Search is unsuccessful, It seems like we don't have that bro");
                     Console.WriteLine("Search another game console (Enter 0 to exit)");
                     string upper = Console.ReadLine();
-                    user_Gconsole_choice = upper.ToUpper();
+                    userGaconsoleChoice = upper.ToUpper();
                 }
             }
-            var total_amt = gameconsolecart.Sum();
-            Console.WriteLine($"The total amount to pay is {total_amt}");
+            var totalAmount = gameConsoleCart.Sum();
+            Console.WriteLine($"The total amount to pay is {totalAmount}");
             Console.WriteLine("Input the amount you have: ");
-            int user_money = Convert.ToInt32(Console.ReadLine());
-            var exchange = user_money - total_amt;
-            if (total_amt > user_money)
+            int userMoney = Convert.ToInt32(Console.ReadLine());
+            var exchange = userMoney - totalAmount;
+            if (totalAmount > userMoney)
             {
                 Console.WriteLine("Not enough funds!");
                 Console.WriteLine("Try again?(Y/N)");
                 string upper = Console.ReadLine();
-                string user_ans = upper.ToUpper();
-                if (user_ans == "Y")
+                string userAns = upper.ToUpper();
+                if (userAns == "Y")
                 {
                     Console.WriteLine("Input the amount you have: ");
-                    int user_moneyy = Convert.ToInt32(Console.ReadLine());
-                    while (user_moneyy < total_amt)
+                    int user_Money = Convert.ToInt32(Console.ReadLine());
+                    while (user_Money < totalAmount)
                     {
                         Console.WriteLine("Not enough funds!");
                         Console.WriteLine("Input the amount you have: ");
-                        user_moneyy = Convert.ToInt32(Console.ReadLine());
+                        user_Money = Convert.ToInt32(Console.ReadLine());
                     }
-                    var exchangee = user_moneyy - total_amt;
-                    Console.WriteLine($"Thank you! Your exchange is {exchangee}");
+                    var exchange_ = user_Money - totalAmount;
+                    Console.WriteLine($"Thank you! Your exchange is {exchange_}");
                 }
             }
             else
